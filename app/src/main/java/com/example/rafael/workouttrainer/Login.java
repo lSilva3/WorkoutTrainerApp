@@ -26,7 +26,7 @@ public class Login extends AppCompatActivity {
     EditText editTextPassword        ;
     Button   buttonLoginRegister     ;
 
-
+    // Autenticação base de dados
     private FirebaseAuth mAuth;
 
     @Override
