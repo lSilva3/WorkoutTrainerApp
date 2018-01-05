@@ -1,0 +1,107 @@
+{
+  "project_info": {
+    "project_number": "295280795661",
+    "firebase_url": "https://workouttrainer-d0f99.firebaseio.com",
+    "project_id": "workouttrainer-d0f99",
+    "storage_bucket": "workouttrainer-d0f99.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:295280795661:android:49ca7856ef34b191",
+        "android_client_info": {
+          "package_name": "com.example.rafael.workouttrainer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "295280795661-3vo9rclnm7nnok8rp3kqv2ti9jgv3fqd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rafael.workouttrainer",
+            "certificate_hash": "86c3b23b085b1423b426a03d7885a3b64a9fc9c0"
+          }
+        },
+        {
+          "client_id": "295280795661-gtd4tvkd2ib0ph0cb4d9jsqdsgfj1tno.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rafael.workouttrainer",
+            "certificate_hash": "b934dc7a0b5dcce6aa3d29e21cead894e4df96c1"
+          }
+        },
+        {
+          "client_id": "295280795661-i8bkr9j6i4chiu8cf0at0r8mpa2p40hb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWuSb8ZPvVkOpZ6Iq_yxCy8cjPPDsG1s0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "295280795661-i8bkr9j6i4chiu8cf0at0r8mpa2p40hb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:295280795661:android:e8ae34aae5531a26",
+        "android_client_info": {
+          "package_name": "com.example.rafael.workoutsecretary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "295280795661-0gptes0r08t46494mqrhnpnsjn4imsu8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rafael.workoutsecretary",
+            "certificate_hash": "b934dc7a0b5dcce6aa3d29e21cead894e4df96c1"
+          }
+        },
+        {
+          "client_id": "295280795661-i8bkr9j6i4chiu8cf0at0r8mpa2p40hb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWuSb8ZPvVkOpZ6Iq_yxCy8cjPPDsG1s0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "295280795661-i8bkr9j6i4chiu8cf0at0r8mpa2p40hb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
