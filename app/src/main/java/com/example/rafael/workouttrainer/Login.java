@@ -48,7 +48,8 @@ public class Login extends AppCompatActivity {
     }
 
     void attempLogin(){
-            //Login
+
+        //Login
             mAuth.signInWithEmailAndPassword(editTextEmail.getText().toString(),
                     editTextPassword.getText().toString())
                     .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
