@@ -14,8 +14,13 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.rafael.workouttrainer.Models.Plano;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
-public class PlanoActivity extends AppCompatActivity {
+public class PlanoActivity extends AppCompatActivity implements ValueEventListener {
 
     // Nome plano
     EditText nomePlano;
@@ -44,7 +49,10 @@ public class PlanoActivity extends AppCompatActivity {
     //Adapter
     ArrayAdapter<CharSequence> adapter;
 
-
+    // Firebase
+    FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
+    DatabaseReference mPlanoRefenrence = firebaseDatabase.getReference();
+    DatabaseReference detalheplano = mPlanoRefenrence.child("Plano");
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -97,20 +105,6 @@ public class PlanoActivity extends AppCompatActivity {
                 // Receber os dados inseridos no formulario do plano
                 plano.setNomePlano(nomePlano.getText().toString());
 
-                plano.setNomeEx1(nomeEx1.getText().toString());
-                plano.setNomeEx2(nomeEx2.getText().toString());
-                plano.setNomeEx3(nomeEx3.getText().toString());
-                plano.setNomeEx4(nomeEx4.getText().toString());
-
-                plano.setnSeriesEx1(Integer.parseInt(spinnerEx1Series.getSelectedItem().toString()));
-                plano.setnSeriesEx2(Integer.parseInt(spinnerEx2Series.getSelectedItem().toString()));
-                plano.setnSeriesEx3(Integer.parseInt(spinnerEx3Series.getSelectedItem().toString()));
-                plano.setnSeriesEx4(Integer.parseInt(spinnerEx4Series.getSelectedItem().toString()));
-
-                plano.setnRepsEx1(Integer.parseInt(spinnerEx1Reps.getSelectedItem().toString()));
-                plano.setnRepesEx2(Integer.parseInt(spinnerEx2Reps.getSelectedItem().toString()));
-                plano.setnRepsEx3(Integer.parseInt(spinnerEx3Reps.getSelectedItem().toString()));
-                plano.setnRepesEx4(Integer.parseInt(spinnerEx4Reps.getSelectedItem().toString()));
 
 
                 // Mensagem de aviso com os detalhes do plano
@@ -120,6 +114,10 @@ public class PlanoActivity extends AppCompatActivity {
 
                 Toast toast = Toast.makeText(context, text, duration);
                 toast.show();
+
+                //Teste para escrver na base de dados
+                detalheplano.setValue(plano);
+
             }
         });
 
@@ -149,6 +147,15 @@ public class PlanoActivity extends AppCompatActivity {
     }
 
 
+    @Override
+    public void onDataChange(DataSnapshot dataSnapshot) {
+
+    }
+
+    @Override
+    public void onCancelled(DatabaseError databaseError) {
+
+    }
 }
 
 
