@@ -6,12 +6,15 @@ package com.example.rafael.workouttrainer.Models;
 
 public class Plano {
 
+    // Variaveis
     String nomePlano;
     String nomeEx1, nomeEx2, nomeEx3, nomeEx4;
     int codEx1, codEx2, codEx3, codEx4;
     int nRepsEx1, nRepesEx2, nRepsEx3, nRepesEx4;
     int nSeriesEx1, nSeriesEx2, nSeriesEx3, nSeriesEx4;
 
+
+    // Construtor
     public Plano( String nomePlano, String nomeEx1, String nomeEx2, String nomeEx3, String nomeEx4, int codEx1, int codEx2, int codEx3, int codEx4, int nRepsEx1, int nRepesEx2, int nRepsEx3, int nRepesEx4, int nSeriesEx1, int nSeriesEx2, int nSeriesEx3, int nSeriesEx4) {
         this.nomePlano = nomePlano;
         this.nomeEx1 = nomeEx1;this.nomeEx2 = nomeEx2;this.nomeEx3 = nomeEx3;this.nomeEx4 = nomeEx4;
