@@ -16,12 +16,12 @@ public class CreatingChat {
         this.messageUser = messageUser;
 
         messageTime = new Date().getTime();
-
-
     }
 
     public CreatingChat() {
     }
+
+
 
     public String getMessageText() {
         return messageText;

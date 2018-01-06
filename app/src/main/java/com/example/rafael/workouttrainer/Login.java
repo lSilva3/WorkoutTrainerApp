@@ -20,7 +20,7 @@ import com.google.firebase.auth.FirebaseUser;
 public class Login extends AppCompatActivity {
 
     private static final String TAG = "LoginActivity";
-    private static int SIGN_IN_REQUEST_CODE = 0 ;
+    public static int SIGN_IN_REQUEST_CODE = 0 ;
 
     EditText editTextEmail           ;
     EditText editTextPassword        ;
