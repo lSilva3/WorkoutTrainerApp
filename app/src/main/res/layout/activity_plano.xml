@@ -12,14 +12,32 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp"
-        tools:ignore="MissingConstraints">
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="0dp">
 
-        <Spinner
-            android:id="@+id/spinner"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:text="Nome Plano" />
+            </LinearLayout>
+        </LinearLayout>
 
         <TextView
             android:id="@+id/textView"
@@ -34,19 +52,50 @@
             android:layout_weight="1"
             android:orientation="horizontal">
 
-            <Spinner
-                android:id="@+id/spinner2"
+            <TextView
+                android:id="@+id/textViewNomeEx1"
                 android:layout_width="126dp"
-                android:layout_height="wrap_content" />
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Nome Exercicio" />
+
+            <TextView
+                android:id="@+id/textViewSerieEx1"
+                android:layout_width="126dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Series" />
+
+            <TextView
+                android:id="@+id/textViewRepsEx1"
+                android:layout_width="126dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Reps" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/EditTextNomeEx1"
+                android:layout_width="126dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="" />
 
             <Spinner
-                android:id="@+id/spinner3"
+                android:id="@+id/spinnerEx1Series"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
 
             <Spinner
-                android:id="@+id/spinner4"
+                android:id="@+id/spinnerEx1Reps"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
@@ -54,7 +103,7 @@
         </LinearLayout>
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/textViewEx2"
             android:layout_width="match_parent"
             android:layout_height="20dp"
             android:text="Exericio 2"
@@ -66,20 +115,50 @@
             android:layout_weight="1"
             android:orientation="horizontal">
 
+            <TextView
+                android:id="@+id/textViewNomeEx2"
+                android:layout_width="126dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Nome Exercicio" />
+
+            <TextView
+                android:id="@+id/textViewSerieEx2"
+                android:layout_width="126dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Series" />
+
+            <TextView
+                android:id="@+id/textViewRepsEx2"
+                android:layout_width="126dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Reps" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/EditTextNomeEx2"
+                android:layout_width="126dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="" />
+
             <Spinner
-                android:id="@+id/spinner5"
+                android:id="@+id/spinnerEx2Series"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
 
             <Spinner
-                android:id="@+id/spinner6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
-
-            <Spinner
-                android:id="@+id/spinner7"
+                android:id="@+id/spinnerEx2Reps"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
@@ -87,7 +166,7 @@
         </LinearLayout>
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/textViewEx3"
             android:layout_width="match_parent"
             android:layout_height="20dp"
             android:text="Exericio 3"
@@ -99,20 +178,50 @@
             android:layout_weight="1"
             android:orientation="horizontal">
 
+            <TextView
+                android:id="@+id/textViewNomeEx3"
+                android:layout_width="126dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Nome Exercicio" />
+
+            <TextView
+                android:id="@+id/textViewSerieEx3"
+                android:layout_width="126dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Series" />
+
+            <TextView
+                android:id="@+id/textViewRepsEx3"
+                android:layout_width="126dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Reps" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/EditTextNomeEx3"
+                android:layout_width="126dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="" />
+
             <Spinner
-                android:id="@+id/spinner8"
+                android:id="@+id/spinnerEx3Series"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
 
             <Spinner
-                android:id="@+id/spinner9"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
-
-            <Spinner
-                android:id="@+id/spinner10"
+                android:id="@+id/spinnerEx3Reps"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
@@ -120,7 +229,7 @@
         </LinearLayout>
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/textViewEx4"
             android:layout_width="match_parent"
             android:layout_height="20dp"
             android:text="Exericio 4"
@@ -132,32 +241,28 @@
             android:layout_weight="1"
             android:orientation="horizontal">
 
-            <Spinner
-                android:id="@+id/spinner11"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
+            <TextView
+                android:id="@+id/textViewNomeEx4"
+                android:layout_width="126dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Nome Exercicio" />
 
-            <Spinner
-                android:id="@+id/spinner12"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
+            <TextView
+                android:id="@+id/textViewSerieEx4"
+                android:layout_width="126dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Series" />
 
-            <Spinner
-                android:id="@+id/spinner13"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
+            <TextView
+                android:id="@+id/textViewRepsEx4"
+                android:layout_width="126dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Reps" />
 
         </LinearLayout>
-
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:text="Exericio"
-            tools:layout_editor_absoluteY="23dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -165,26 +270,43 @@
             android:layout_weight="1"
             android:orientation="horizontal">
 
+            <EditText
+                android:id="@+id/EditTextNomeEx4"
+                android:layout_width="126dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="" />
+
             <Spinner
-                android:id="@+id/spinner14"
+                android:id="@+id/spinnerEx4Series"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
 
             <Spinner
-                android:id="@+id/spinner15"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
-
-            <Spinner
-                android:id="@+id/spinner16"
+                android:id="@+id/spinnerEx4Reps"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
 
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonEnviarPlano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Enviar Plano" />
+        </LinearLayout>
+
     </LinearLayout>
 
+
 </android.support.constraint.ConstraintLayout>
+
