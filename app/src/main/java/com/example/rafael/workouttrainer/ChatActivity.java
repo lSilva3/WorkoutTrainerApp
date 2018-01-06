@@ -90,7 +90,7 @@ public class ChatActivity extends AppCompatActivity {
         else
         {
             Snackbar.make(activity_chat,"Welcome " + FirebaseAuth.getInstance().getCurrentUser().getEmail(),Snackbar.LENGTH_SHORT).show();
-           //displayChatMessage();
+           displayChatMessage();
         }
 
 
@@ -98,6 +98,7 @@ public class ChatActivity extends AppCompatActivity {
 
     private void displayChatMessage() {
         ListView listOfMessage = (ListView)findViewById(R.id.list_of_messages);
+        //loinha de codigo que esta a dar erro
         adapter = new FirebaseListAdapter<CreatingChat>(this,CreatingChat.class,R.layout.list_item,FirebaseDatabase.getInstance().getReference())
         {
             @Override
