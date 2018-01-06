@@ -90,7 +90,7 @@ public class ChatActivity extends AppCompatActivity {
         else
         {
             Snackbar.make(activity_chat,"Welcome " + FirebaseAuth.getInstance().getCurrentUser().getEmail(),Snackbar.LENGTH_SHORT).show();
-           displayChatMessage();
+           //displayChatMessage();
         }
 
 

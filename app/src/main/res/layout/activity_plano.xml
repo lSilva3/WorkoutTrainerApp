@@ -30,7 +30,7 @@
 
 
                 <EditText
-                    android:id="@+id/editText"
+                    android:id="@+id/editTextNomePlano"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -82,7 +82,7 @@
             android:orientation="horizontal">
 
             <EditText
-                android:id="@+id/EditTextNomeEx1"
+                android:id="@+id/editTextNomeEx1"
                 android:layout_width="126dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -145,7 +145,7 @@
             android:orientation="horizontal">
 
             <EditText
-                android:id="@+id/EditTextNomeEx2"
+                android:id="@+id/editTextNomeEx2"
                 android:layout_width="126dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -208,7 +208,7 @@
             android:orientation="horizontal">
 
             <EditText
-                android:id="@+id/EditTextNomeEx3"
+                android:id="@+id/editTextNomeEx3"
                 android:layout_width="126dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -271,7 +271,7 @@
             android:orientation="horizontal">
 
             <EditText
-                android:id="@+id/EditTextNomeEx4"
+                android:id="@+id/editTextNomeEx4"
                 android:layout_width="126dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
