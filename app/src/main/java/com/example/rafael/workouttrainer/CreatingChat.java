@@ -6,7 +6,7 @@ import java.util.Date;
  * Created by luis on 05/01/2018.
  */
 
-public class CreatingChat {
+public  class CreatingChat {
     private String messageText;
     private String messageUser;
     private long messageTime;

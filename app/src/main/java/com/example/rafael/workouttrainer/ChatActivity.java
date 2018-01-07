@@ -9,7 +9,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -56,7 +55,7 @@ public class ChatActivity extends AppCompatActivity {
         if(requestCode == SIGN_IN_REQUEST_CODE){
             if(resultCode == RESULT_OK){
                 Snackbar.make(activity_chat,"Successfully signed in.Welcome!", Snackbar.LENGTH_SHORT).show();
-                //displayChatMessage();
+                displayChatMessage();
             }
             else{
                 Snackbar.make(activity_chat,"We couldn´t sign you in.Please try again later!", Snackbar.LENGTH_SHORT).show();
@@ -90,9 +89,10 @@ public class ChatActivity extends AppCompatActivity {
         else
         {
             Snackbar.make(activity_chat,"Welcome " + FirebaseAuth.getInstance().getCurrentUser().getEmail(),Snackbar.LENGTH_SHORT).show();
-           displayChatMessage();
+
         }
 
+        displayChatMessage();
 
     }
 
@@ -106,9 +106,9 @@ public class ChatActivity extends AppCompatActivity {
 
                 //Get references to the views of list_item.xml
                 TextView messageText, messageUser, messageTime;
-                messageText = (TextView) findViewById(R.id.message_text);
-                messageUser = (TextView) findViewById(R.id.message_user);
-                messageTime = (TextView) findViewById(R.id.message_time);
+                messageText = (TextView) v.findViewById(R.id.message_text);
+                messageUser = (TextView) v.findViewById(R.id.message_user);
+                messageTime = (TextView) v.findViewById(R.id.message_time);
 
                 messageText.setText(model.getMessageText());
                 messageUser.setText(model.getMessageUser());
