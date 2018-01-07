@@ -4,7 +4,7 @@ package com.example.rafael.workouttrainer.Models;
  * Created by Mario on 06/01/2018.
  */
 
-public class Exercico {
+public class Exercicio {
     String nome;
     int nSeries;
     int nReps;
@@ -12,13 +12,13 @@ public class Exercico {
     Plano plano;
 
 
-    public Exercico(String nome, int nSeries, int nReps) {
+    public Exercicio(String nome, int nSeries, int nReps) {
         this.nome = nome;
         this.nSeries = nSeries;
         this.nReps = nReps;
     }
 
-    public Exercico() {
+    public Exercicio() {
     }
 
     public String getNome() {return nome;}
@@ -33,7 +33,7 @@ public class Exercico {
 
     @Override
     public String toString() {
-        return "Exercico{" +
+        return "Exercicio{" +
                 "nome='" + nome + '\'' +
                 ", nSeries=" + nSeries +
                 ", nReps=" + nReps +
