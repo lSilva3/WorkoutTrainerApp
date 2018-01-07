@@ -98,7 +98,6 @@ public class ChatActivity extends AppCompatActivity {
 
     private void displayChatMessage() {
         ListView listOfMessage = (ListView)findViewById(R.id.list_of_messages);
-        //loinha de codigo que esta a dar erro
         adapter = new FirebaseListAdapter<CreatingChat>(this,CreatingChat.class,R.layout.list_item,FirebaseDatabase.getInstance().getReference())
         {
             @Override
