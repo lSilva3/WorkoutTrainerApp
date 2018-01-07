@@ -111,7 +111,7 @@ public class ChatActivity extends AppCompatActivity {
                 messageTime = (TextView) v.findViewById(R.id.message_time);
 
 
-                //esta a funcionar
+                //esta a funcionar aleluia
                 messageText.setText(model.getMessageText());
                 messageUser.setText(model.getMessageUser());
                 messageTime.setText(DateFormat.format("dd-MM-yyyy (HH:mm:ss)", model.getMessageTime()));
