@@ -33,7 +33,7 @@ public class AddCliente extends AppCompatActivity {
         setContentView(R.layout.activity_add_cliente);
         editTextEmail          = findViewById(R.id.editTextEmail         );
         editTextPassword       = findViewById(R.id.editTextPassword      );
-        buttonRegister    = findViewById(R.id.buttonLoginRegister   );
+        buttonRegister    = findViewById(R.id.buttonRegister  );
 
 
 

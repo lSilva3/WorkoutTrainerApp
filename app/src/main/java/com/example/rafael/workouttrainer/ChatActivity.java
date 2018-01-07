@@ -1,6 +1,8 @@
 package com.example.rafael.workouttrainer;
 import android.content.Intent;
+import android.os.Build;
 import android.support.annotation.NonNull;
+import android.support.annotation.RequiresApi;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -100,6 +102,7 @@ public class ChatActivity extends AppCompatActivity {
         ListView listOfMessage = (ListView)findViewById(R.id.list_of_messages);
         adapter = new FirebaseListAdapter<CreatingChat>(this,CreatingChat.class,R.layout.list_item,FirebaseDatabase.getInstance().getReference())
         {
+            @RequiresApi(api = Build.VERSION_CODES.CUPCAKE)
             @Override
             protected void populateView(View v, CreatingChat model, int position) {
 
