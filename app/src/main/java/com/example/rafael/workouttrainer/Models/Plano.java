@@ -10,19 +10,27 @@ import java.util.List;
 public class Plano {
 
     // Variaveis
+    //String id;
     String nomePlano;
     List<Exercicio> exercicios = new ArrayList<>();
 
     // Construtor
 
 
+
+
     public Plano(String nomePlano, List<Exercicio> exercicios) {
         this.nomePlano = nomePlano;
+        this.exercicios = exercicios;
+    }
+    public Plano( List<Exercicio> exercicios) {
         this.exercicios = exercicios;
     }
 
     public Plano() {
     }
+
+
 
     public String getNomePlano() {
         return nomePlano;

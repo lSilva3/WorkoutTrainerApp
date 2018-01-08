@@ -47,7 +47,7 @@ public class PlanoActivity extends AppCompatActivity implements ValueEventListen
 
     // Firebase
     FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
-    DatabaseReference mPlanoRefenrence = firebaseDatabase.getReference();
+    DatabaseReference mPlanoRefenrence = firebaseDatabase.getReference("planos");
 
     // Ver qual o user logado actualmente
     FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
@@ -90,8 +90,8 @@ public class PlanoActivity extends AppCompatActivity implements ValueEventListen
                 //Criar um exercicio novo e adicionar ao array exercicios
                 Exercicio exercicio = new Exercicio();
                 exercicio.setNome(nomeEx.getText().toString());
-                exercicio.setnSeries(Integer.parseInt(spinnerExSeries.getSelectedItem().toString()));
-                exercicio.setnReps(Integer.parseInt(spinnerExReps.getSelectedItem().toString()));
+                exercicio.setnSeries((spinnerExSeries.getSelectedItem().toString()));
+                exercicio.setnReps((spinnerExReps.getSelectedItem().toString()));
                 exercicios.add(exercicio);
 
                 // Repor os valores dos campos
@@ -130,6 +130,8 @@ public class PlanoActivity extends AppCompatActivity implements ValueEventListen
 
                     }
                 });
+
+
             }
         });
 

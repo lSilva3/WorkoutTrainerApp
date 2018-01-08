@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/WorkoutTrainer.iml" filepath="$PROJECT_DIR$/WorkoutTrainer.iml" />
-      <module fileurl="file://C:\Users\Rafael\Desktop\WorkoutTrainerApp\WorkoutTrainer.iml" filepath="C:\Users\Rafael\Desktop\WorkoutTrainerApp\WorkoutTrainer.iml" />
-      <module fileurl="file://C:\Users\luis\Desktop\Desktop\WorkoutTrainer\WorkoutTrainerApp.iml" filepath="C:\Users\luis\Desktop\Desktop\WorkoutTrainer\WorkoutTrainerApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WorkoutTrainerApp.iml" filepath="$PROJECT_DIR$/WorkoutTrainerApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

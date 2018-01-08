@@ -6,16 +6,17 @@ package com.example.rafael.workouttrainer.Models;
 
 public class Exercicio {
     String nome;
-    int nSeries;
-    int nReps;
-
-    Plano plano;
+    String nSeries;
+    String nReps;
 
 
-    public Exercicio(String nome, int nSeries, int nReps) {
+
+
+    public Exercicio(String nome, String nSeries, String nReps) {
         this.nome = nome;
         this.nSeries = nSeries;
         this.nReps = nReps;
+
     }
 
     public Exercicio() {
@@ -24,12 +25,10 @@ public class Exercicio {
     public String getNome() {return nome;}
 
     public void setNome(String nome) {this.nome = nome;}
-    public int getnSeries() {return nSeries;}
-    public void setnSeries(int nSeries) {this.nSeries = nSeries;}
-    public int getnReps() {return nReps;}
-    public void setnReps(int nReps) {this.nReps = nReps;}
-    public Plano getPlano() {return plano;}
-    public void setPlano(Plano plano) {this.plano = plano;}
+    public String getnSeries() {return nSeries;}
+    public void setnSeries(String nSeries) {this.nSeries = nSeries;}
+    public String getnReps() {return nReps;}
+    public void setnReps(String nReps) {this.nReps = nReps;}
 
     @Override
     public String toString() {
@@ -37,7 +36,6 @@ public class Exercicio {
                 "nome='" + nome + '\'' +
                 ", nSeries=" + nSeries +
                 ", nReps=" + nReps +
-                ", plano=" + plano +
                 '}';
     }
 }
